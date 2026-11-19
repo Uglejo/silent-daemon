@@ -1,0 +1,105 @@
+{
+  "prompts": "book.json",
+  "plan": {
+    "drafts": [
+      {"start": "plain", "model": "gpt-6.2-sol", "effort": "high"},
+      {"start": "proportions", "model": "gpt-6.2-sol", "effort": "high"},
+      {"start": "plain", "model": "gpt-6.2-sol", "effort": "high"},
+      {"start": "proportions", "model": "gpt-6.2-sol", "effort": "high"},
+      {"start": "plain", "model": "gpt-6.2-sol", "effort": "high"},
+      {"start": "proportions", "model": "gpt-6.2-sol", "effort": "high"}
+    ],
+    "steps": [
+      {"rewrites": [{"model": "gpt-6.2-sol", "effort": "high"}], "each_lineage": true, "focus": ["shape"]},
+      {"rewrites": [{"model": "gpt-6.2-sol", "effort": "xhigh"}], "each_lineage": true, "focus": ["materials"]},
+      {"rewrites": [{"model": "gpt-6.2-sol", "effort": "xhigh"}], "each_lineage": true},
+      {"rewrites": [{"model": "gpt-6.2-sol", "effort": "xhigh"}], "each_lineage": true},
+      {"rewrites": [{"model": "gpt-6.2-sol", "effort": "xhigh"}], "each_lineage": true},
+      {"rewrites": [{"model": "gpt-6.2-sol", "effort": "xhigh"}], "each_lineage": true},
+      {"rewrites": [{"model": "gpt-6.2-sol", "effort": "xhigh"}], "each_lineage": true},
+      {"rewrites": [{"model": "gpt-6.2-sol", "effort": "xhigh"}], "each_lineage": true},
+      {"rewrites": [{"model": "gpt-6.2-sol", "effort": "xhigh"}], "each_lineage": true},
+      {"rewrites": [{"model": "gpt-6.2-sol", "effort": "xhigh"}], "each_lineage": true},
+      {"rewrites": [{"model": "gpt-6.2-sol", "effort": "xhigh"}], "each_lineage": true},
+      {"rewrites": [{"model": "gpt-6.2-sol", "effort": "high"}], "each_lineage": true, "edits": true},
+      {"rewrites": [{"model": "gpt-6.2-sol", "effort": "high"}], "each_lineage": true, "edits": true},
+      {"rewrites": [{"model": "gpt-6.2-sol", "effort": "high"}], "each_lineage": true, "edits": true}
+    ],
+    "draft_keep": 1,
+    "draft_merge": {"model": "gpt-6.2-sol", "effort": "high"},
+    "draft_each_start": true,
+    "pose": false,
+    "fill": 0.99,
+    "glow": 0.0,
+    "measured": false,
+    "outline_fit": false,
+    "outline_fit_last": true,
+    "photo_tilt": false,
+    "flat_tilt": false,
+    "fill_step": {"rewrites": [{"model": "gpt-6.2-sol", "effort": "xhigh"}], "each_lineage": true},
+    "fill_max": 0,
+    "rejected_shown": 3
+  },
+  "calls": {
+    "select_model": "gpt-6.2-sol",
+    "select_effort": "medium",
+    "select_max_output": 8192,
+    "draft_select": [
+      {"model": "gpt-6-luna", "effort": "low"},
+      {"model": "gpt-6.1-terra", "effort": "low"}
+    ],
+    "draft_tie_break": true,
+    "brief_max_output": 4096,
+    "module_max_output": 32768,
+    "effort_max_output": {"xhigh": 44000, "medium": 16384},
+    "astra_model": "gpt-6-astra",
+    "astra_max_output": 22000,
+    "measured_astra_max_output": 18000,
+    "repair_model": "gpt-6.2-sol",
+    "critic_max_output": 8192,
+    "ladder": [
+      {"model": "gpt-6.2-sol", "effort": "xhigh"},
+      {"model": "gpt-6.2-sol", "effort": "high"},
+      {"model": "gpt-6.2-sol", "effort": "medium"}
+    ]
+  },
+  "selection": {
+    "parent_margin": 0.25,
+    "grid_weight": 0.25,
+    "garbage_penalty": 2.0,
+    "pose_margin": 0.5,
+    "match_weight": 0.5,
+    "pose_search_gain": 0.5
+  },
+  "finish": {
+    "fit_view_limit": 12.0,
+    "metalness": 0.8,
+    "roughness": 0.2
+  },
+  "lints": {
+    "dark_shift": 45,
+    "dark_min_permille": 10,
+    "light_shift": null,
+    "invisible": false,
+    "tiny_permille": null,
+    "hairline_px": null,
+    "black_grid_luma": null,
+    "near_white_luma": null,
+    "zfight_share": null,
+    "same_color_l1": null
+  },
+  "budget": {
+    "safety": 0.06,
+    "chars_per_token": 3.0,
+    "tokens_per_image": 1400,
+    "reserve_output": [
+      {"model": "gpt-6-astra", "max_output_tokens": 22000, "reserve": 18500},
+      {"model": "gpt-6.2-sol", "max_output_tokens": 44000, "reserve": 36000},
+      {"model": "gpt-6.2-sol", "max_output_tokens": 32768, "reserve": 24000},
+      {"model": "gpt-6.2-sol", "max_output_tokens": 16384, "reserve": 12000},
+      {"model": "gpt-6.2-sol", "max_output_tokens": 8192, "reserve": 2048},
+      {"model": "gpt-6-luna", "max_output_tokens": 8192, "reserve": 2048},
+      {"model": "gpt-6.1-terra", "max_output_tokens": 8192, "reserve": 2048}
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+Reconstruct the object in this target image as the specified Three.js module. Start from the proportions: estimate the width, height and depth of every major part relative to the whole object, write them as named constants, and derive every part from them.

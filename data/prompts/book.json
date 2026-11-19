@@ -1,0 +1,72 @@
+{
+  "prompts": {
+    "GENERATE": {
+      "sections": [
+        {
+          "fragments": [
+            "coder/system/intro.md",
+            "coder/system/rules.md",
+            "coder/system/judging.md",
+            "coder/system/guidance.md"
+          ]
+        }
+      ]
+    },
+    "GENERATE_MEASURED": {
+      "sections": [
+        {
+          "fragments": [
+            "coder/system/intro.md",
+            "coder/system/rules.md",
+            "coder/system/judging_measured.md",
+            "coder/system/guidance_measured.md"
+          ]
+        }
+      ]
+    },
+    "TARGET": "drafter/target.md",
+    "TARGET_PROPORTIONS": "drafter/target_proportions.md",
+    "REWRITE_VIEWS": "coder/module_views.md",
+    "REWRITE": "coder/rewrite.md",
+    "REWRITE_MEASURED": "coder/rewrite_measured.md",
+    "FOCUS_SHAPE": "coder/focus_shape.md",
+    "FOCUS_DETAILS": "coder/focus_details.md",
+    "FOCUS_MATERIALS": "coder/focus_materials.md",
+    "REPAIR": "coder/validation_repair.md",
+    "SELECT_CLOSE": "judge/score_system.md",
+    "SELECT_POSE": {
+      "sections": [
+        {
+          "fragments": [
+            "judge/score_system.md",
+            "judge/score_pose.md"
+          ]
+        }
+      ]
+    },
+    "BRIEF": "brief/brief.md",
+    "BRIEF_BLOCK": "brief/block.md",
+    "CRITIC": "critic/system.md",
+    "CRITIC_INPUT": "critic/input.md",
+    "REWRITE_PLAN": "coder/rewrite_plan.md",
+    "REJECTED": "coder/rejected.md",
+    "REJECTED_ATTEMPT": "coder/rejected_attempt.md",
+    "GENERATE_EDITS": {
+      "sections": [
+        {
+          "fragments": [
+            "coder/system/intro_edits.md",
+            "coder/system/rules.md",
+            "coder/system/judging.md",
+            "coder/system/guidance.md"
+          ]
+        }
+      ]
+    },
+    "REWRITE_EDITS": "coder/rewrite_edits.md",
+    "CRITIQUE": "merge/critique_system.md",
+    "CRITIQUE_INPUT": "merge/critique_input.md",
+    "MERGE": "merge/merge.md",
+    "MERGE_MODULE": "merge/merge_module.md"
+  }
+}
